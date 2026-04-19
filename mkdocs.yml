@@ -1,0 +1,137 @@
+site_name: 信奥知识库
+site_description: 信息学奥赛学习平台
+site_author: 信奥教练
+site_url: https://your-domain.com
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  logo: assets/logo.png
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/your-repo
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search:
+      lang: zh
+  - minify:
+      minify_html: true
+
+nav:
+  - 首页: index.md
+  - C++基础:
+    - cpp/index.md
+    - cpp/environment.md
+    - cpp/basic-syntax.md
+    - cpp/data-types.md
+    - cpp/control-flow.md
+    - cpp/functions.md
+    - cpp/arrays-strings.md
+    - cpp/pointers-references.md
+    - cpp/struct-class.md
+    - cpp/stl-overview.md
+    - cpp/stl-vector.md
+    - cpp/stl-string.md
+    - cpp/stl-map-set.md
+    - cpp/stl-queue-stack.md
+    - cpp/io-optimization.md
+  - 算法入门:
+    - algorithms/index.md
+    - algorithms/complexity.md
+    - algorithms/recursion.md
+    - algorithms/sorting.md
+    - algorithms/searching.md
+    - algorithms/greedy.md
+    - algorithms/two-pointers.md
+    - algorithms/prefix-sum.md
+    - algorithms/difference.md
+  - 数据结构:
+    - data-structures/index.md
+    - data-structures/linear.md
+    - data-structures/stack-queue.md
+    - data-structures/linked-list.md
+    - data-structures/binary-tree.md
+    - data-structures/heap.md
+    - data-structures/disjoint-set.md
+    - data-structures/segment-tree.md
+    - data-structures/trie.md
+  - 图论:
+    - graph/index.md
+    - graph/representation.md
+    - graph/traversal.md
+    - graph/shortest-path.md
+    - graph/minimum-spanning-tree.md
+    - graph/topological-sort.md
+  - 动态规划:
+    - dp/index.md
+    - dp/basic-concepts.md
+    - dp/linear-dp.md
+    - dp/knapsack.md
+    - dp/interval-dp.md
+    - dp/tree-dp.md
+    - dp/state-compression.md
+  - 数学基础:
+    - math/index.md
+    - math/prime.md
+    - math/gcd-lcm.md
+    - math/modular.md
+    - math/combinatorics.md
+    - math/fast-power.md
+  - 代码模板:
+    - templates/index.md
+    - templates/basic-template.md
+    - templates/data-structure-templates.md
+    - templates/graph-templates.md
+    - templates/dp-templates.md
+    - templates/math-templates.md
+  - 比赛指南:
+    - contests/index.md
+    - contests/csp-intro.md
+    - contests/noip-intro.md
+    - contests/past-problems.md
+    - contests/exam-strategy.md
